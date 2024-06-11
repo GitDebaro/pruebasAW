@@ -9,6 +9,7 @@ const articulosRoutes = require('./routes/articulo');
 const protectURL = require("./middlewares/protector");
 const cookieParser = require('cookie-parser');
 const path = require('path');
+const data = require('./routes/datos');
 
 
 const app = express();
@@ -29,7 +30,8 @@ const StartServer = async  () =>{
         app.set('view engine', 'ejs');
         app.set('views', path.join(__dirname, 'views'));
 
-        //rutas 
+        //rutas
+        app.use("/api", data);
         app.use("/api/tradeWing/users", log_requests,authRoutes);
         app.use("/api/tradeWing/dashboard", log_requests, protectURL, articulosRoutes);
         app.use("/", frontend);
