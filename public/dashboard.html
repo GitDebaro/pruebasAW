@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Grupo 1C-G18">
+  <title>TradeWing - Dashboard</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="./assets/img/LOGO.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="assets/css/dashboardStyle.css">
+  <script src="assets/js/dashboard.mjs" type="module" defer></script>
+
+</head>
+
+<body>
+  <main class="container">
+    <div class="botones">
+      <button id="botPerfil">Perfil</button>
+      <button id="logout">Cerrar Sesión</button>
+    </div>
+    <form id="searchForm" class="form" style="width: 100%">
+      <div class="busqueda-grid">
+        <input type="text" id="name" name="name" placeholder="Nombre del artículo...">
+        <button type="submit" id="botonBuscar">Buscar</button>
+      </div>
+    </form>
+
+    <div class="pagina">
+      <section class="panel" id="detalles">
+        <h1>Detalles</h1>
+        <p>Contenido del panel de detalles.</p>
+      </section>
+      <section class="panel" id="catalogo">
+        <h1>Catálogo</h1>
+        <p>Busque un producto para empezar a comprar</p>
+        <div id="productos"></div>
+      </section>
+      <section class="panel" id="cesta">
+        <h1>Cesta</h1>
+        <div class="cesta">
+          <ul id="cesta-compra">
+          </ul>
+        </div>
+        <button id="boton-pagar">Finalizar Compra</button>
+
+      </section>
+    </div>
+  </main>
+  <footer class="container">
+    <hr>
+    <p>&copy; 2024. Aplicaciones Web. <em>Grado en Ingeniería Informática (Universidad de León)</em>.</p>
+  </footer>
+</body>
+
+</html>

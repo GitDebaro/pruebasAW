@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Grupo 1C-G18">
+  <title>TradeWing - Perfil</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="./assets/img/LOGO.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="./assets/css/perfil.css">
+  <script src="assets/js/perfil.mjs" type="module" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1 id="titulo-perfil">PERFIL</h1>
+    <button id="botVolver">Volver</button>
+  </header>
+  <section class="grid">
+    <div class="profile-section">
+      <img id="pfp" src="https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png">
+      <table id="tablaDatos">
+
+      </table>
+      <button id="mostrarDiag">Editar</button>
+      <dialog id="diag">
+        <form method="dialog" id="img-update">
+          <input type="text" name="foto" id="url" placeholder="URL de la imagen..." required>
+          <div class="btncontainer">
+            <button type="submit" id="cerrarDiag">Cancelar</button>
+            <button type="submit" id="editarImg">Aceptar</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
+    <div class="form-container">
+      <h2>Añadir artículo</h2>
+      <form id="addArt">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="text" name="precio" placeholder="Precio" required>
+        <input type="text" name="imagen" placeholder="Imagen del artículo"> 
+        <input type="textarea" name="descripcion" placeholder="Descripcion" required>
+        <button type="submit" id="anadir-articulo">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <h2 class="articulosVenta">Artículos en venta</h2>
+  <div class="pagina">
+    <section class="panel" id="detallesPerfil">
+      <h1>Detalles</h1>
+      <p>Contenido del panel de detalles.</p>
+    </section>
+    <div id="productosPerfil" class="panel"></div>
+  </div>
+  
+</body>
+
+</html>

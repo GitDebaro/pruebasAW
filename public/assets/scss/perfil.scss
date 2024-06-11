@@ -1,0 +1,164 @@
+$radio-borde-panel: 0.35rem;
+$color-borde-panel: #ccc;
+$espacio-pagina: 1rem;
+$margen-botones: 1rem 0;
+$espacio-busqueda: 0.5rem;
+$margen-inferior-busqueda: 1rem;
+$espacio-pagina: 20px;
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+#titulo-perfil {
+    color: #ffffff;
+    margin: 0;
+}
+
+#botVolver {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    align-items: start;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#pfp {
+    width: 30%;
+    border-radius: 50%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+dialog {
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#url {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btncontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btncontainer>button {
+    width: 48%;
+    padding: 10px;
+}
+
+.btncontainer>button.contrast {
+    color: white;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-card {
+    flex: 0 0 20%;
+    width: 20%;
+    aspect-ratio: 1 / 1.5;
+    border: 1px solid $color-borde-panel;
+    border-radius: $radio-borde-panel;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 10px;
+
+    h2 {
+        margin-top: 5%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    img{
+        width: 90%;
+        aspect-ratio: 1 / 1;        
+    }
+
+
+}
+
+.panel {
+    padding: 1rem;
+    border: 1px solid $color-borde-panel;
+    border-radius: $radio-borde-panel;
+}
+
+#catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $espacio-busqueda;
+}
+
+.articulos-venta{
+    text-align: center;
+}
+
+
+.pagina {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: $espacio-pagina;
+    margin: $espacio-pagina 0;
+    width: 100%;
+    min-height: 100%;
+}

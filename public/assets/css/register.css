@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo-img {
+  display: block;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.grid {
+  text-align: right;
+}
+
+/*# sourceMappingURL=register.css.map */

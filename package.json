@@ -1,0 +1,30 @@
+{
+  "name": "aw-final-1c-g18",
+  "version": "1.0.0",
+  "description": "Aplicación de compraventa de objetos, TradeWing",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r dotenv/config src/app.js",
+    "dev": "nodemon -r dotenv/config --watch src src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ULE-Informatica-2023-2024/aw-final-1c-g18.git"
+  },
+  "author": "AW-1C-G18",
+  "license": "ISC",
+  "homepage": "https://github.com/ULE-Informatica-2023-2024/aw-final-1c-g18.git#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.2"
+  }
+}
